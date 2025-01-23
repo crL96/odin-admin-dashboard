@@ -85,6 +85,11 @@ body > * {
     grid-template-rows: repeat(10, 1fr);
 }
 
+.navItem,
+.branding {
+    display: flex;
+}
+
 .icon {
     height: 1.5rem;
 }
