@@ -114,6 +114,7 @@ body > * {
 }
 
 .projectcontainer {
+    grid-column: 1 / 2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
@@ -124,7 +125,7 @@ body > * {
     border-left: 0.7rem solid var(--orange);
     border-radius: 0.8rem;
     background-color: white;
-    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.35);
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
@@ -139,6 +140,35 @@ body > * {
     justify-content: end;
     gap: 1rem;
     margin-top: auto;
+}
+
+.rightside {
+    grid-column: 2 / 3;
+}
+
+#announcementBox {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.35);
+}
+
+#announcementBox > * {
+    border-bottom: 2px solid var(--lightgrey);
+    padding: 0.8rem 0;
+}
+
+#announcementBox > div:last-child {
+    border-bottom: none;
+}
+
+#announcementBox h5 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+p {
+    color: grey;
 }
 
 .nav {
