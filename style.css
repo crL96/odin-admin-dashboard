@@ -68,19 +68,22 @@ th, td {
 }
 
 body {
+    background-color: var(--lightgrey);
     display: grid;
     grid-template-columns: minmax(200px, 250px) 1fr;
     grid-template-rows: 8rem;
 }
 
-body > * {
+/* body > * {
     border: 1px solid black;
-}
+} */
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 1fr 3fr;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.35);
 }
 
 .header > * {
@@ -105,7 +108,6 @@ body > * {
 
 .content {
     grid-column: 2 / 3;
-    background-color: var(--lightgrey);
     display: grid;
     grid-template-columns: 1fr minmax(200px, 300px);
     grid-template-rows: 2rem;
@@ -146,11 +148,16 @@ body > * {
     grid-column: 2 / 3;
 }
 
-#announcementBox {
+#announcementBox,
+#trendingBox {
     background-color: white;
     padding: 1.5rem 2rem;
     border-radius: 0.8rem;
     box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.35);
+}
+
+#trendingText {
+    margin: 3rem 0 0.7rem;
 }
 
 #announcementBox > * {
@@ -165,6 +172,16 @@ body > * {
 #announcementBox h5 {
     font-size: 1rem;
     margin-bottom: 0.25rem;
+}
+
+.trendingUser {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.trendingUser:last-child {
+    margin-bottom: 0;
 }
 
 p {
