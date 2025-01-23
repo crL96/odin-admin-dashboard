@@ -8,20 +8,26 @@
 </head>
 <body>
     <div class="header">
-        <div id="headerRow1">
-            <img src="icons/magnify.svg" alt="search icon" class="icon">
-            <input type="search">
-            <img src="" alt="bell icon" class="icon">
-            <img src="" alt="user profile picture">
-            <h4>Morgan Oakley</h4>
-        </div>
-        <div id="headerRow2">
-            <img src="" alt="user profile picture">
-            <div id="userGreeting">
-                <p>Hi there,</p>
-                <h3>Morgain Oakley (@morgan)</h3>
+        <div id="headerRow1" class="headerRow">
+            <div class="headerRowSub">
+                <img src="icons/magnify.svg" alt="search icon" class="icon">
+                <input type="search">
             </div>
-            <div>
+            <div class="headerRowSub">
+                <img src="icons/bell-ring-outline.svg" alt="bell icon" class="icon">
+                <img src="icons/face-man.svg" alt="user profile picture" class="icon">
+                <h4>Morgan Oakley</h4>
+            </div>
+        </div>
+        <div id="headerRow2" class="headerRow">
+            <div class="headerRowSub">
+                <img src="icons/face-man.svg" alt="user profile picture" class="icon big">
+                <div id="userGreeting">
+                    <p>Hi there,</p>
+                    <h3>Morgan Oakley (@morgan)</h3>
+                </div>
+            </div>
+            <div class="headerRowSub">
                 <button type="button">New</button>
                 <button type="button">Upload</button>
                 <button type="button">Share</button>
@@ -31,7 +37,7 @@
 
     <div class="sidebar">
         <div class="branding">
-            <img src="icons/language-css3.svg" alt="icon" class="icon big">
+            <img src="icons/language-css3.svg" alt="icon" class="icon">
             <h2>Dashboard</h2>
         </div>
         <div class="nav">
